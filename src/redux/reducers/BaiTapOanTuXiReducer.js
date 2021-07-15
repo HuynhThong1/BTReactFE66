@@ -45,7 +45,7 @@ const BaiTapOanTuXiReducer = (state = stateDefault, action) => {
                 case 'keo':
                     if (computer.ma === 'keo') {
                         state.ketQua = 'DRAW!!!'
-                    } else if (computer.bua === 'bua') {
+                    } else if (computer.ma === 'bua') {
                         state.ketQua = 'YOU LOSE!!!'
                     } else {
                         state.ketQua = 'YOU WON!!!'
@@ -56,7 +56,7 @@ const BaiTapOanTuXiReducer = (state = stateDefault, action) => {
                     if (computer.ma === 'keo') {
                         state.ketQua = 'YOU WON!!!'
                         state.soBanThang++;
-                    } else if (computer.bua === 'bua') {
+                    } else if (computer.ma === 'bua') {
                         state.ketQua = 'DRAW!!!'
                     } else {
                         state.ketQua = 'YOU LOSE!!!'
@@ -65,7 +65,7 @@ const BaiTapOanTuXiReducer = (state = stateDefault, action) => {
                 case 'bao':
                     if (computer.ma === 'keo') {
                         state.ketQua = 'YOU LOSE!!!'
-                    } else if (computer.bua === 'bua') {
+                    } else if (computer.ma === 'bua') {
                         state.ketQua = 'YOU WON!!!'
                         state.soBanThang++;
                     } else {

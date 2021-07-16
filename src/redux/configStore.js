@@ -1,9 +1,12 @@
 import { combineReducers, createStore } from 'redux';
 import BaiTapOanTuXiReducer from './reducers/BaiTapOanTuXiReducer'
+import BaiTapDatVeReducer from './reducers/BaiTapDatVeReducer';
+
 
 const rootReducer = combineReducers({
     //Liệt kê các state của ứng dụng
     stateUser: BaiTapOanTuXiReducer,
+    BaiTapDatVeReducer,
 })
 
 

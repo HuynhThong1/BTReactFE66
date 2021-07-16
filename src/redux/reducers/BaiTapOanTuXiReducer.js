@@ -18,7 +18,7 @@ const BaiTapOanTuXiReducer = (state = stateDefault, action) => {
             //reset mảng cược
             let mangCuocUpdate = [...state.mangDatCuoc];
             mangCuocUpdate = mangCuocUpdate.map((item, index) => {
-                if (item.ma == action.payload) {
+                if (item.ma === action.payload) {
                     return { ...item, datCuoc: true }
                 }
                 //dổi tất cả datCuoc thành false
